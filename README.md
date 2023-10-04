@@ -160,7 +160,7 @@ https://www.naver.com/favicon.ico?1
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
-/>1₩ 111
+/>
 ```
 
 ## Google Fonts
