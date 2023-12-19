@@ -1,10 +1,10 @@
 # list
 
-https://oddodd.io/-setting/!list.html
+https://oddodd.io/-html-templates-scss/!list.html
 
 ## main
 
-https://oddodd.io/-setting/
+https://oddodd.io/-html-templates-scss/
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9f2f756f-e1fc-48d9-9c07-b7d7433d8aaa/deploy-status)](https://app.netlify.com/sites/flamboyant-lumiere-482a1e/deploys)
 
