@@ -1,22 +1,19 @@
-# list
-
-https://oddodd.io/-html-templates-scss/!list.html
-
-## main
-
-https://oddodd.io/-html-templates-scss/
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9f2f756f-e1fc-48d9-9c07-b7d7433d8aaa/deploy-status)](https://app.netlify.com/sites/flamboyant-lumiere-482a1e/deploys)
-
 # Setting
 
 프로젝트 시작시 사용할 수 있는 setting 파일입니다.
 
-[main(master) 브랜치로 이동](https://github.com/oddodd/-setting) <br/>
-[signin 브랜치로 이동](https://github.com/oddodd/-setting?files=1)
+## File
 
-[list](https://oddodd.io/-setting/!list.html) <br/>
-[DEMO](https://oddodd.io/-setting/)
+## list
+
+[https://oddodd.io/-html-templates-scss/!list.html](https://oddodd.io/-html-templates-scss/!list.html)
+
+## main
+
+[https://oddodd.io/-html-templates-scss/](https://oddodd.io/-html-templates-scss/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9f2f756f-e1fc-48d9-9c07-b7d7433d8aaa/deploy-status)](https://app.netlify.com/sites/flamboyant-lumiere-482a1e/deploys)
+
 
 ## Naming Case (BEM)
 
@@ -25,6 +22,11 @@ https://oddodd.io/-html-templates-scss/
 - kebab-case, header-container, btn-list, menu-list ...
 - (하이픈)으로 단어를 연결하는 표기법
 - HTML 태그의 class 속성으로 흔히 사용됨
+
+### Snake_case(뱀 표기범)
+
+- snake_case, background_color, light_box, main_container ...
+- 단어를 \_(언더바)로 구분하는 표기법
 
 ### camelCase(카멜 표기법)
 
@@ -37,14 +39,19 @@ https://oddodd.io/-html-templates-scss/
 - PascalCase, TypeName, LightBox, DarkBox ...
 - 카멜 표기법과 같으나, 파스칼 표기법은 첫번째 글자도 대문자로 선언
 
-### Snake_case(뱀 표기범)
-
-- snake_case, background_color, light_box, main_container ...
-- 단어를 \_(언더바)로 구분하는 표기법
-
 ## BEM
 
 BEM이란? CSS 제작 방법론으로, 일종의 네이밍 컨벤션이라고 볼 수 있다. 개발, 디버깅, 유지보수를 위해 가능한 명확하게 네이밍하는 것이 그들의 목표이다.
+
+https://getbem.com/naming/
+
+```html
+<div class="slide slide--active">
+    <div class="slide__item slide__item--active"></div>
+    <div class="slide__item"></div>
+    <div class="slide__item"></div>
+</div>
+```
 
 ## 문자 인코딩(Character Encoding) 설정
 
@@ -232,40 +239,6 @@ body {
 <i class="fa-solid fa-house"></i>
 ```
 
-## GSAP & ScrollToPlugin
-
-[GSAP(The GreenSock Animation Platform)](https://greensock.com/gsap/)은 자바스크립트로 제어하는 타임라인 기반의 애니메이션 라이브러리입니다.
-[ScrollToPlugin](https://greensock.com/scrolltoplugin/)은 스크롤 애니메이션을 지원하는 GSAP 플러그인입니다.
-
-> 자바스크립트 지식이 뛰어나지 않아도 충분히 사용할 수 있습니다!
-
-```html
-<script
-  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
-  integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
-  crossorigin="anonymous"
-></script>
-<script
-  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
-  integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
-  crossorigin="anonymous"
-></script>
-```
-
-[.to() 사용법](<https://greensock.com/docs/v3/GSAP/gsap.to()>)
-[GSAP Easing](https://greensock.com/docs/v2/Easing)
-
-```js
-gsap.to(요소, 시간, 옵션);
-// 또는
-TweenMax.to(요소, 시간, 옵션);
-```
-
-```js
-gsap.to(window, 0.7, {
-  scrollTo: 0,
-});
-```
 
 ## Swiper
 
@@ -303,6 +276,62 @@ new Swiper(".swiper-container", {
   autoplay: true, // 자동 재생 여부
   loop: true, // 반복 재생 여부
 });
+```
+
+## GSAP & ScrollToPlugin
+
+[GSAP(The GreenSock Animation Platform)](https://greensock.com/gsap/)은 자바스크립트로 제어하는 타임라인 기반의 애니메이션 라이브러리입니다.
+[ScrollToPlugin](https://greensock.com/scrolltoplugin/)은 스크롤 애니메이션을 지원하는 GSAP 플러그인입니다.
+
+> 자바스크립트 지식이 뛰어나지 않아도 충분히 사용할 수 있습니다!
+
+```html
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+  integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+  integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+  crossorigin="anonymous"
+></script>
+```
+
+[.to() 사용법](<https://greensock.com/docs/v3/GSAP/gsap.to()>)
+[GSAP Easing](https://greensock.com/docs/v2/Easing)
+
+```js
+gsap.to(요소, 시간, 옵션);
+// 또는
+TweenMax.to(요소, 시간, 옵션);
+```
+
+```js
+gsap.to(window, 0.7, {
+  scrollTo: 0,
+});
+```
+
+## ScrollMagic
+
+[ScrollMagic](https://github.com/janpaepke/ScrollMagic)은 스크롤과 요소의 상호 작용을 위한 자바스크립트 라이브러리입니다.<br>
+대표적으로 어떤 요소가 현재 화면에 보이는 상태인지를 확인할 때 사용합니다.
+
+[ScrollMagic API](http://scrollmagic.io/docs/)
+
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+```
+
+```js
+new ScrollMagic.Scene({
+  // 감시할 장면(Scene)을 추가
+  triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
+  triggerHook: 0.8, // 화면의 80% 지점에서 보여짐 여부 감시
+})
+  .setClassToggle(spyEl, "show") // 요소가 화면에 보이면 show 클래스 추가
+  .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수!)
 ```
 
 ## Youtube API
@@ -350,23 +379,53 @@ function onYouTubePlayerAPIReady() {
 }
 ```
 
-## ScrollMagic
+## SASS(SCSS)
 
-[ScrollMagic](https://github.com/janpaepke/ScrollMagic)은 스크롤과 요소의 상호 작용을 위한 자바스크립트 라이브러리입니다.<br>
-대표적으로 어떤 요소가 현재 화면에 보이는 상태인지를 확인할 때 사용합니다.
+> SASS(SCSS)는 CSS 전처리기로, CSS의 불편한 점을 보완하여 편리하게 사용할 수 있도록 도와줍니다.
 
-[ScrollMagic API](http://scrollmagic.io/docs/)
+### 설치
 
-```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
-```
+[Node.js](https://nodejs.org/ko/)를 설치한 후, 터미널에서 다음 명령어를 입력합니다.
 
-```js
-new ScrollMagic.Scene({
-  // 감시할 장면(Scene)을 추가
-  triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
-  triggerHook: 0.8, // 화면의 80% 지점에서 보여짐 여부 감시
-})
-  .setClassToggle(spyEl, "show") // 요소가 화면에 보이면 show 클래스 추가
-  .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수!)
+vscode > extensions > live sass compiler > install > reload > watch sass 클릭
+
+### 사용법
+
+```scss
+// 변수
+$color-primary: #f00;
+$color-secondary: #0f0;
+
+// 중첩
+#gnb {
+    ul {
+        display: flex;
+        li {
+            margin-right: 1rem;
+        }
+        a {
+            color: $color-primary;
+        }
+    }
+}
+
+// 믹스인
+@mixin flexCenter($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// 함수
+@function calcRem($px) {
+    @return $px / 16 * 1rem;
+}
+
+// 선택자
+body {
+    background: $color-primary;
+    color: $color-secondary;
+    @include flexCenter();
+    font-size: calcRem(16);
+}
 ```
