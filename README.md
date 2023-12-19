@@ -1,10 +1,10 @@
 # list
 
-https://eehd80.github.io/-setting/!list.html
+https://oddodd.io/-setting/!list.html
 
 ## main
 
-https://eehd80.github.io/-setting/
+https://oddodd.io/-setting/
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9f2f756f-e1fc-48d9-9c07-b7d7433d8aaa/deploy-status)](https://app.netlify.com/sites/flamboyant-lumiere-482a1e/deploys)
 
@@ -12,11 +12,11 @@ https://eehd80.github.io/-setting/
 
 프로젝트 시작시 사용할 수 있는 setting 파일입니다.
 
-[main(master) 브랜치로 이동](https://github.com/eehd80/-setting) <br/>
-[signin 브랜치로 이동](https://github.com/eehd80/-setting?files=1)
+[main(master) 브랜치로 이동](https://github.com/oddodd/-setting) <br/>
+[signin 브랜치로 이동](https://github.com/oddodd/-setting?files=1)
 
-[list](https://eehd80.github.io/-setting/!list.html) <br/>
-[DEMO](https://eehd80.github.io/-setting/)
+[list](https://oddodd.io/-setting/!list.html) <br/>
+[DEMO](https://oddodd.io/-setting/)
 
 ## Naming Case (BEM)
 
@@ -78,11 +78,11 @@ BEM이란? CSS 제작 방법론으로, 일종의 네이밍 컨벤션이라고 �
 
 Slack -
 
-<img width="549" alt="image" src="https://github.com/eehd80/-setting/assets/10627436/17b4a0bd-4630-4483-8e82-52c0b4eafdbe">
+<img width="549" alt="image" src="https://github.com/oddodd/-setting/assets/10627436/17b4a0bd-4630-4483-8e82-52c0b4eafdbe">
 
 KakaoTalk -
 
-<img width="246" alt="image" src="https://github.com/eehd80/-setting/assets/10627436/e4eeef46-fe12-410d-bf2e-7037a1b155ae">
+<img width="246" alt="image" src="https://github.com/oddodd/-setting/assets/10627436/e4eeef46-fe12-410d-bf2e-7037a1b155ae">
 
 [더 많은 오픈 그래프 속성 보기](https://ogp.me/)
 
