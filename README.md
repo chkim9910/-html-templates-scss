@@ -2,7 +2,39 @@
 
 프로젝트 시작시 사용할 수 있는 setting 파일입니다.
 
-## File
+## File 구조
+
+```bash
+├── !list.html
+├── index.html
+├── assets
+│   ├── scss
+│   │   ├── common.scss
+│   │   ├── _variables.scss
+│   │   ├── _mixins.scss
+│   │   ├── _fonts.scss
+│   │   ├── _reset.scss
+│   │   ├── _main.scss
+│   │   └── _sub1.scss
+│   ├── css
+│   │   ├── common.css
+│   ├── js
+│   │   ├── common.js
+│   │   ├── main.js
+│   │   └── sub1.js
+│   ├── fonts
+├── images
+│   ├── common
+│   │   ├── logo.png
+│   │   └── favicon.png
+│   ├── main
+│   │   ├── main1.png
+│   │   └── main2.png
+│   └── sub1
+│       ├── sub1-1.png
+│       └── sub1-2.png
+└── README.md
+```
 
 ## list
 
@@ -14,30 +46,29 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9f2f756f-e1fc-48d9-9c07-b7d7433d8aaa/deploy-status)](https://app.netlify.com/sites/flamboyant-lumiere-482a1e/deploys)
 
-
 ## Naming Case (BEM)
 
 ### kebab-case(케밥 표기법)
 
-- kebab-case, header-container, btn-list, menu-list ...
-- (하이픈)으로 단어를 연결하는 표기법
-- HTML 태그의 class 속성으로 흔히 사용됨
+-   kebab-case, header-container, btn-list, menu-list ...
+-   (하이픈)으로 단어를 연결하는 표기법
+-   HTML 태그의 class 속성으로 흔히 사용됨
 
 ### Snake_case(뱀 표기범)
 
-- snake_case, background_color, light_box, main_container ...
-- 단어를 \_(언더바)로 구분하는 표기법
+-   snake_case, background_color, light_box, main_container ...
+-   단어를 \_(언더바)로 구분하는 표기법
 
 ### camelCase(카멜 표기법)
 
-- camelCase, typeName, lightBox, darkBox ...
-- 기본적으로 변수명을 모두 소문자로 씀
-- 여러 단어가 이어지는 경우 첫 단어를 제외하고 각 단어의 첫글자만 대문자로 지정
+-   camelCase, typeName, lightBox, darkBox ...
+-   기본적으로 변수명을 모두 소문자로 씀
+-   여러 단어가 이어지는 경우 첫 단어를 제외하고 각 단어의 첫글자만 대문자로 지정
 
 ### PascalCase(파스칼 표기법)
 
-- PascalCase, TypeName, LightBox, DarkBox ...
-- 카멜 표기법과 같으나, 파스칼 표기법은 첫번째 글자도 대문자로 선언
+-   PascalCase, TypeName, LightBox, DarkBox ...
+-   카멜 표기법과 같으나, 파스칼 표기법은 첫번째 글자도 대문자로 선언
 
 ## BEM
 
@@ -61,8 +92,8 @@ https://getbem.com/naming/
 <meta charset="UTF-8" />
 ```
 
-- `UTF-8`: 초성, 중성, 종성으로 구분하여 문자를 작성(권장)
-- `EUC-KR`: 하나의 완성된 글자를 인식
+-   `UTF-8`: 초성, 중성, 종성으로 구분하여 문자를 작성(권장)
+-   `EUC-KR`: 하나의 완성된 글자를 인식
 
 ## 뷰포트(Viewport) 렌더링 방식 설정
 
@@ -73,11 +104,11 @@ https://getbem.com/naming/
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 ```
 
-- `width=device-width`: 화면의 가로 너비를 각 디바이스(Device)의 가로 너비와 동일하게 적용
-- `initial-scale=1.0`: 화면의 초기 화면 배율(확대 정도)을 설정
-- `user-scalable=no`: 사용자가 디바이스 화면을 확대(`yes`)/축소(`no`)할 수 있는지 설정
-- `maximum-scale=1`: 사용자가 화면을 확대할 수 있는 최댓값
-- `minimum-scale=1`: 사용자가 화면을 축소할 수 있는 최솟값
+-   `width=device-width`: 화면의 가로 너비를 각 디바이스(Device)의 가로 너비와 동일하게 적용
+-   `initial-scale=1.0`: 화면의 초기 화면 배율(확대 정도)을 설정
+-   `user-scalable=no`: 사용자가 디바이스 화면을 확대(`yes`)/축소(`no`)할 수 있는지 설정
+-   `maximum-scale=1`: 사용자가 화면을 확대할 수 있는 최댓값
+-   `minimum-scale=1`: 사용자가 화면을 축소할 수 있는 최솟값
 
 ## 오픈 그래프(The Open Graph protocol)
 
@@ -97,19 +128,16 @@ KakaoTalk -
 <meta property="og:type" content="website" />
 <meta property="og:title" content="페이지 제목" />
 <meta property="og:description" content="페이지 설명" />
-<meta
-  property="og:image"
-  content="http://www.mysite.com/article/article1_featured_image.jpg"
-/>
+<meta property="og:image" content="http://www.mysite.com/article/article1_featured_image.jpg" />
 <meta property="og:url" content="http://www.mysite.com/article/article1.html" />
 ```
 
-- `og:type`: 페이지의 유형(E.g, `website`, `video.movie`)
-- `og:site_name`: 속한 사이트의 이름
-- `og:title`: 페이지의 이름(제목)
-- `og:description`: 페이지의 간단한 설명
-- `og:image`: 페이지의 대표 이미지 주소(URL)
-- `og:url`: 페이지 주소(URL)
+-   `og:type`: 페이지의 유형(E.g, `website`, `video.movie`)
+-   `og:site_name`: 속한 사이트의 이름
+-   `og:title`: 페이지의 이름(제목)
+-   `og:description`: 페이지의 간단한 설명
+-   `og:image`: 페이지의 대표 이미지 주소(URL)
+-   `og:url`: 페이지 주소(URL)
 
 ## 트위터 카드(Twitter Cards)
 
@@ -121,19 +149,16 @@ KakaoTalk -
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="페이지 제목" />
 <meta name="twitter:description" content="페이지 설명" />
-<meta
-  name="twitter:image"
-  content="http://www.mysite.com/article/article1.html"
-/>
+<meta name="twitter:image" content="http://www.mysite.com/article/article1.html" />
 <meta name="twitter:domain" content="사이트 명" />
 ```
 
-- `twitter:card`: 페이지(카드)의 유형(E.g. `summary`, `player`)
-- `twitter:site`: 속한 사이트의 이름
-- `twitter:title`: 페이지의 이름(제목)
-- `twitter:description`: 페이지의 간단한 설명
-- `twitter:image`: 페이지의 대표 이미지 주소(URL)
-- `twitter:url`: 페이지 주소(URL)
+-   `twitter:card`: 페이지(카드)의 유형(E.g. `summary`, `player`)
+-   `twitter:site`: 속한 사이트의 이름
+-   `twitter:title`: 페이지의 이름(제목)
+-   `twitter:description`: 페이지의 간단한 설명
+-   `twitter:image`: 페이지의 대표 이미지 주소(URL)
+-   `twitter:url`: 페이지 주소(URL)
 
 ## Favicon(파비콘, favorites icon)
 
@@ -148,8 +173,8 @@ KakaoTalk -
 <link rel="icon" href="./favicon.png" />
 ```
 
-- `favicon.ico` 64 x 64 (px) 또는 32 x 32 또는 16 x 16
-- `favicon.png` 500 x 500 (px)
+-   `favicon.ico` 64 x 64 (px) 또는 32 x 32 또는 16 x 16
+-   `favicon.png` 500 x 500 (px)
 
 https://www.naver.com/favicon.ico?1
 
@@ -164,10 +189,7 @@ https://www.naver.com/favicon.ico?1
 각 브라우저의 기본 스타일을 초기화합니다.
 
 ```html
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
-/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
 ```
 
 ## Google Fonts
@@ -180,17 +202,14 @@ https://www.naver.com/favicon.ico?1
 
 ```html
 <link rel="preconnect" href="https://fonts.gstatic.com" />
-<link
-  href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
-  rel="stylesheet"
-/>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
 ```
 
 페이지에 폰트를 적용(CSS 상속)합니다.
 
 ```css
 body {
-  font-family: "Nanum Gothic", sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 ```
 
@@ -203,14 +222,14 @@ body {
 ```html
 <!-- icons -->
 <link
-  href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round"
-  rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round"
+    rel="stylesheet"
 />
 
 <!-- symbols -->
 <link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@NaN,0,0,0"
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@NaN,0,0,0"
 />
 ```
 
@@ -227,10 +246,7 @@ body {
 [Getting started for web](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css)
 
 ```html
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 ```
 
 다음과 같이 사용할 수 있습니다.
@@ -238,7 +254,6 @@ body {
 ```html
 <i class="fa-solid fa-house"></i>
 ```
-
 
 ## Swiper
 
@@ -248,19 +263,16 @@ body {
 
 ```html
 <!-- in HEAD -->
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
 <!-- in BODY -->
 <div class="swiper-container">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">1</div>
-    <div class="swiper-slide">2</div>
-    <div class="swiper-slide">3</div>
-  </div>
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">1</div>
+        <div class="swiper-slide">2</div>
+        <div class="swiper-slide">3</div>
+    </div>
 </div>
 ```
 
@@ -271,10 +283,10 @@ new Swiper(요소, 옵션);
 ```
 
 ```js
-new Swiper(".swiper-container", {
-  direction: "vertical", // 수직 슬라이드
-  autoplay: true, // 자동 재생 여부
-  loop: true, // 반복 재생 여부
+new Swiper('.swiper-container', {
+    direction: 'vertical', // 수직 슬라이드
+    autoplay: true, // 자동 재생 여부
+    loop: true, // 반복 재생 여부
 });
 ```
 
@@ -287,14 +299,14 @@ new Swiper(".swiper-container", {
 
 ```html
 <script
-  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
-  integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
-  crossorigin="anonymous"
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"
 ></script>
 <script
-  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
-  integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
-  crossorigin="anonymous"
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+    integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+    crossorigin="anonymous"
 ></script>
 ```
 
@@ -309,7 +321,7 @@ TweenMax.to(요소, 시간, 옵션);
 
 ```js
 gsap.to(window, 0.7, {
-  scrollTo: 0,
+    scrollTo: 0,
 });
 ```
 
@@ -326,12 +338,12 @@ gsap.to(window, 0.7, {
 
 ```js
 new ScrollMagic.Scene({
-  // 감시할 장면(Scene)을 추가
-  triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
-  triggerHook: 0.8, // 화면의 80% 지점에서 보여짐 여부 감시
+    // 감시할 장면(Scene)을 추가
+    triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
+    triggerHook: 0.8, // 화면의 80% 지점에서 보여짐 여부 감시
 })
-  .setClassToggle(spyEl, "show") // 요소가 화면에 보이면 show 클래스 추가
-  .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수!)
+    .setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
+    .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수!)
 ```
 
 ## Youtube API
@@ -355,27 +367,27 @@ new ScrollMagic.Scene({
 
 ```js
 // Youtube IFrame API를 비동기로 로드합니다.
-var tag = document.createElement("script");
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName("script")[0];
+var tag = document.createElement('script');
+tag.src = 'https://www.youtube.com/iframe_api';
+var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 function onYouTubePlayerAPIReady() {
-  // <div id="player"></div>
-  new YT.Player("player", {
-    videoId: "An6LvWQuj_8", // 재생할 유튜브 영상 ID
-    playerVars: {
-      autoplay: true, // 자동 재생 유무
-      loop: true, // 반복 재생 유무
-      playlist: "An6LvWQuj_8", // 반복 재생할 유튜브 영상 ID 목록
-    },
-    events: {
-      // 영상이 준비되었을 때,
-      onReady: function (event) {
-        event.target.mute(); // 음소거!
-      },
-    },
-  });
+    // <div id="player"></div>
+    new YT.Player('player', {
+        videoId: 'An6LvWQuj_8', // 재생할 유튜브 영상 ID
+        playerVars: {
+            autoplay: true, // 자동 재생 유무
+            loop: true, // 반복 재생 유무
+            playlist: 'An6LvWQuj_8', // 반복 재생할 유튜브 영상 ID 목록
+        },
+        events: {
+            // 영상이 준비되었을 때,
+            onReady: function (event) {
+                event.target.mute(); // 음소거!
+            },
+        },
+    });
 }
 ```
 
