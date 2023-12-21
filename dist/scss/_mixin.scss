@@ -1,3 +1,9 @@
+@mixin card($bg-color, $border-color) {
+    height: 300px;
+    border: 1px solid $border-color;
+    background-color: $bg-color;
+}
+
 @mixin posX {
   position: absolute;
   left: 50%;
